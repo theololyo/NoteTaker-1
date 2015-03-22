@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="noteTaker">
+	<head>
+		<title>NoteTaker</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="js/plugins/angular.min.js"></script>
+		<script src="js/plugins/angular-route.min.js"></script>
+		<script src="js/plugins/angular-strap.min.js"></script>
+	</head>
+	<body ng-controller='mainCtrl'>
+
+	<ng-include src="'templates/nav.html'"></ng-include>
+	
+	<div class="container">
+		<ng-view></ng-view>
+	</div>
+	{{something}}
+
+		<script src="js/main.js"></script>
+		<script src="js/controllers/mainController.js"></script>
+	</body>
+</html>

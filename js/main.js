@@ -1,14 +1,11 @@
 (function() {
     "use strict";
-    angular.module('noteTaker', ['mainCtrl', 'ngRoute'])
+    angular.module('noteTaker', ['controllers', 'ngRoute'])
         .config(['$routeProvider',
             function($routeProvider) {
                 $routeProvider
-                    .when("/", {
+                    .when("/home", {
                         templateUrl: "templates/home.html"
-                    })
-                    .otherwise({
-                        redirectTo: "/"
                     })
             }])
 }());

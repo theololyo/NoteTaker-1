@@ -1,9 +1,5 @@
-(function() {
-
-var noteTaker = angular.module('noteTaker', []);
-noteTaker.controller('mainCtrl', ['$scope', function($scope){
+angular.module('controllers', []).controller('mainCtrl', ['$scope', function ($scope) {
 
 	$scope.something = "DERPIEDERPDERP";
-	
-}])
-}());
+
+}]);
